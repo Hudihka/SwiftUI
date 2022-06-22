@@ -1,32 +1,11 @@
 //
-//  ContentView.swift
+//  Gesture.swift
 //  Actions
 //
-//  Created by Константин Ирошников on 21.06.2022.
+//  Created by Константин Ирошников on 22.06.2022.
 //
 
-import SwiftUI
-
-struct ContentView: View {
-        var body: some View {
-            Text("tap me")
-                .padding(50)
-                .background(.orange)
-                .gesture(
-                    // сработает когда перетащим хотя бы на 50 ед
-                    DragGesture(minimumDistance: 50)
-                        .onEnded({ _ in
-                            print("press")
-                        })
-                )
-        }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+import Foundation
 
 
 // просто жест
