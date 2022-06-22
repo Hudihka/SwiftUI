@@ -9,20 +9,46 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State private var name = ""
+    private let colors = ["white", "red", "blue", "green", "orange", "black",]
+    @State private var selectedColor = "red"
 
-    var body: some View {
-        TextField("Enter your name....", text: $name, onEditingChanged: { value in
-            print("или мы тапнули на ТФ или убрали с него курсор")
-        }, onCommit: {
-            print("нажали некст")
-        })
-            .padding(20)
-            .multilineTextAlignment(.center)
-            .background(Color.red)
-            .keyboardType(.numberPad)
-            .foregroundColor(Color.black)
-            .textFieldStyle(RoundedBorderTextFieldStyle()) // если надо поменять бэкграунд цвет то задай в качестве бэкграунда вьюшку
+        var body: some View {
+            VStack {
+                Picker("Please choose a color", selection: $selectedColor) {
+                    ForEach(colors, id: \.self) {
+                        Text($0)
+                    }
+                }
+                .pickerStyle(WheelPickerStyle())
+                /*
+                 DefaultPickerStyle   // поповер
+                 InlinePickerStyle    // барабан
+                 MenuPickerStyle          // тоже поповер
+                 PopUpButtonPickerStyle   // не для iOS
+                 RadioGroupPickerStyle     // не для iOS
+                 SegmentedPickerStyle     сегмент контроллер
+                 WheelPickerStyle       // тоже барабан
+                 */
+                Text("You selected: \(selectedColor)")
+                    .background(youSelectColor)
+            }
+        }
+
+    private var youSelectColor: Color {
+        switch selectedColor {
+        case "white":
+            return .white
+        case "red":
+            return .red
+        case "blue":
+            return .blue
+        case "green":
+            return .green
+        case "orange":
+            return .orange
+        default:
+            return .black
+        }
     }
 }
 
