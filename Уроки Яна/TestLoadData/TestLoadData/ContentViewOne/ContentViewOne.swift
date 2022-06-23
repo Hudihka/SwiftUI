@@ -13,9 +13,11 @@ struct ContentViewOne: View {
 
     init(VM: ContentViewOneVM) {
         self.VM = VM
+        self.VM.loadData()
     }
 
     var body: some View {
+        
         VStack {
             Text(VM.content ?? "no text")
             Spacer().frame(height: 25)
