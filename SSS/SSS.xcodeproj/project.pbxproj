@@ -14,6 +14,9 @@
 		45009B81287F2ED4006FDB0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45009B80287F2ED4006FDB0D /* LaunchScreen.storyboard */; };
 		45009B84287F30E6006FDB0D /* UIResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B83287F30E6006FDB0D /* UIResources.swift */; };
 		45009B87287F316A006FDB0D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B86287F316A006FDB0D /* UIColor.swift */; };
+		45009B8B287F45CD006FDB0D /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B8A287F45CD006FDB0D /* PasswordView.swift */; };
+		45009B8D287F45FA006FDB0D /* ButtonCifr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B8C287F45FA006FDB0D /* ButtonCifr.swift */; };
+		45009B8F287F4635006FDB0D /* ButtonDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B8E287F4635006FDB0D /* ButtonDelete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		45009B80287F2ED4006FDB0D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45009B83287F30E6006FDB0D /* UIResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResources.swift; sourceTree = "<group>"; };
 		45009B86287F316A006FDB0D /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		45009B8A287F45CD006FDB0D /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		45009B8C287F45FA006FDB0D /* ButtonCifr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCifr.swift; sourceTree = "<group>"; };
+		45009B8E287F4635006FDB0D /* ButtonDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelete.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 				45009B82287F2F93006FDB0D /* Resources */,
 				45009B72287F293B006FDB0D /* SSSApp.swift */,
 				45009B74287F293B006FDB0D /* ContentView.swift */,
+				45009B88287F45B6006FDB0D /* PasswordView */,
 				45009B85287F3145006FDB0D /* Extensions */,
 			);
 			path = SSS;
@@ -90,6 +97,16 @@
 				45009B86287F316A006FDB0D /* UIColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		45009B88287F45B6006FDB0D /* PasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				45009B8A287F45CD006FDB0D /* PasswordView.swift */,
+				45009B8C287F45FA006FDB0D /* ButtonCifr.swift */,
+				45009B8E287F4635006FDB0D /* ButtonDelete.swift */,
+			);
+			path = PasswordView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45009B8B287F45CD006FDB0D /* PasswordView.swift in Sources */,
+				45009B8D287F45FA006FDB0D /* ButtonCifr.swift in Sources */,
+				45009B8F287F4635006FDB0D /* ButtonDelete.swift in Sources */,
 				45009B75287F293B006FDB0D /* ContentView.swift in Sources */,
 				45009B87287F316A006FDB0D /* UIColor.swift in Sources */,
 				45009B73287F293B006FDB0D /* SSSApp.swift in Sources */,
