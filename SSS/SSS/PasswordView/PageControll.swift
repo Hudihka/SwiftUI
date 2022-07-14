@@ -9,29 +9,30 @@ import SwiftUI
 
 struct PageControl: View {
 
-//    @Binding private var selectPage: Int
     private var count: Int = 0
+
+    init(count: Int) {
+        self.count = count
+    }
 
     var body: some View {
         HStack(spacing: 10) {
-            ForEach(0..<6) { _ in
-                Circle()
-                    .fill(SSSColor.white)
-                    .stroke(SSSColor.white, style: StrokeStyle(lineWidth: 2, lineCap: .round))
-                    .frame(width: 15, height: 15)
+            ForEach(0..<6) { index in
+                createCircle(full: index < count)
             }
         }
     }
 
+    @ViewBuilder
     private func createCircle(full: Bool) -> some View {
 
         if full {
-            return Circle()
-                .stroke(SSSColor.white, style: StrokeStyle(lineWidth: 2, lineCap: .round))
+            Circle()
+                .fill(SSSColor.white)
                 .frame(width: 15, height: 15)
         } else {
-            return Circle()
-                .fill(SSSColor.white)
+            Circle()
+                .stroke(SSSColor.white, style: StrokeStyle(lineWidth: 2, lineCap: .round))
                 .frame(width: 15, height: 15)
         }
     }
