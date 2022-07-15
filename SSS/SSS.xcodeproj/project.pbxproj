@@ -18,6 +18,7 @@
 		45009B8D287F45FA006FDB0D /* ButtonCifr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B8C287F45FA006FDB0D /* ButtonCifr.swift */; };
 		45009B8F287F4635006FDB0D /* ButtonDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B8E287F4635006FDB0D /* ButtonDelete.swift */; };
 		45009B91287F5502006FDB0D /* PageControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B90287F5502006FDB0D /* PageControll.swift */; };
+		456CFBF42880262E007F50DE /* URLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CFBF32880262E007F50DE /* URLView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		45009B8C287F45FA006FDB0D /* ButtonCifr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCifr.swift; sourceTree = "<group>"; };
 		45009B8E287F4635006FDB0D /* ButtonDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelete.swift; sourceTree = "<group>"; };
 		45009B90287F5502006FDB0D /* PageControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControll.swift; sourceTree = "<group>"; };
+		456CFBF32880262E007F50DE /* URLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				45009B82287F2F93006FDB0D /* Resources */,
 				45009B72287F293B006FDB0D /* SSSApp.swift */,
 				45009B74287F293B006FDB0D /* ContentView.swift */,
+				456CFBF2288025FF007F50DE /* URLView */,
 				45009B88287F45B6006FDB0D /* PasswordView */,
 				45009B85287F3145006FDB0D /* Extensions */,
 			);
@@ -110,6 +113,14 @@
 				45009B8E287F4635006FDB0D /* ButtonDelete.swift */,
 			);
 			path = PasswordView;
+			sourceTree = "<group>";
+		};
+		456CFBF2288025FF007F50DE /* URLView */ = {
+			isa = PBXGroup;
+			children = (
+				456CFBF32880262E007F50DE /* URLView.swift */,
+			);
+			path = URLView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456CFBF42880262E007F50DE /* URLView.swift in Sources */,
 				45009B8B287F45CD006FDB0D /* PasswordView.swift in Sources */,
 				45009B8D287F45FA006FDB0D /* ButtonCifr.swift in Sources */,
 				45009B8F287F4635006FDB0D /* ButtonDelete.swift in Sources */,
