@@ -19,6 +19,10 @@
 		45009B8F287F4635006FDB0D /* ButtonDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B8E287F4635006FDB0D /* ButtonDelete.swift */; };
 		45009B91287F5502006FDB0D /* PageControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B90287F5502006FDB0D /* PageControll.swift */; };
 		456CFBF42880262E007F50DE /* URLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CFBF32880262E007F50DE /* URLView.swift */; };
+		45F80D6B28818FE000A9C5DF /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F80D6A28818FE000A9C5DF /* CollectionView.swift */; };
+		45F80D6D288197B100A9C5DF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F80D6C288197B100A9C5DF /* View.swift */; };
+		45F80D7028819EE800A9C5DF /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F80D6F28819EE800A9C5DF /* MyCustomButton.swift */; };
+		45F80D742881A57800A9C5DF /* Anket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F80D732881A57800A9C5DF /* Anket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		45009B8E287F4635006FDB0D /* ButtonDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelete.swift; sourceTree = "<group>"; };
 		45009B90287F5502006FDB0D /* PageControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControll.swift; sourceTree = "<group>"; };
 		456CFBF32880262E007F50DE /* URLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLView.swift; sourceTree = "<group>"; };
+		45F80D6A28818FE000A9C5DF /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		45F80D6C288197B100A9C5DF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		45F80D6F28819EE800A9C5DF /* MyCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
+		45F80D732881A57800A9C5DF /* Anket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +78,9 @@
 				45009B82287F2F93006FDB0D /* Resources */,
 				45009B72287F293B006FDB0D /* SSSApp.swift */,
 				45009B74287F293B006FDB0D /* ContentView.swift */,
-				456CFBF2288025FF007F50DE /* URLView */,
-				45009B88287F45B6006FDB0D /* PasswordView */,
+				45F80D722881A55800A9C5DF /* Models */,
+				45F80D712881A52C00A9C5DF /* Views */,
+				45F80D6E28819EC100A9C5DF /* UIKit */,
 				45009B85287F3145006FDB0D /* Extensions */,
 			);
 			path = SSS;
@@ -100,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				45009B86287F316A006FDB0D /* UIColor.swift */,
+				45F80D6C288197B100A9C5DF /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -121,6 +131,40 @@
 				456CFBF32880262E007F50DE /* URLView.swift */,
 			);
 			path = URLView;
+			sourceTree = "<group>";
+		};
+		45F80D6928818FC500A9C5DF /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				45F80D6A28818FE000A9C5DF /* CollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		45F80D6E28819EC100A9C5DF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				45F80D6F28819EE800A9C5DF /* MyCustomButton.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		45F80D712881A52C00A9C5DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45F80D6928818FC500A9C5DF /* CollectionView */,
+				456CFBF2288025FF007F50DE /* URLView */,
+				45009B88287F45B6006FDB0D /* PasswordView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45F80D722881A55800A9C5DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45F80D732881A57800A9C5DF /* Anket.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,14 +238,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F80D7028819EE800A9C5DF /* MyCustomButton.swift in Sources */,
 				456CFBF42880262E007F50DE /* URLView.swift in Sources */,
 				45009B8B287F45CD006FDB0D /* PasswordView.swift in Sources */,
 				45009B8D287F45FA006FDB0D /* ButtonCifr.swift in Sources */,
 				45009B8F287F4635006FDB0D /* ButtonDelete.swift in Sources */,
 				45009B75287F293B006FDB0D /* ContentView.swift in Sources */,
 				45009B87287F316A006FDB0D /* UIColor.swift in Sources */,
+				45F80D6B28818FE000A9C5DF /* CollectionView.swift in Sources */,
 				45009B73287F293B006FDB0D /* SSSApp.swift in Sources */,
+				45F80D742881A57800A9C5DF /* Anket.swift in Sources */,
 				45009B84287F30E6006FDB0D /* UIResources.swift in Sources */,
+				45F80D6D288197B100A9C5DF /* View.swift in Sources */,
 				45009B91287F5502006FDB0D /* PageControll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

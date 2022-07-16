@@ -17,6 +17,9 @@ struct URLView: View {
             SSSColor.black.ignoresSafeArea()
             VStack(spacing: Constant.spacing) {
                 VStack(spacing: 0) {
+                    Spacer()
+                        .frame(maxHeight: 50)
+                        .fixedSize()
                     Text("Скопируйте URL анкеты")
                         .foregroundColor(SSSColor.white)
                         .font(
@@ -24,7 +27,7 @@ struct URLView: View {
                             .weight(.bold)
                         )
                     Spacer()
-                        .frame(minHeight: 50)
+                        .frame(minHeight: 100)
                         .fixedSize()
                     Text("ссылка на урл")
                         .foregroundColor(SSSColor.white)
@@ -38,25 +41,12 @@ struct URLView: View {
                         .overlay(RoundedRectangle(cornerRadius: 10)
                                     .stroke(SSSColor.white, lineWidth: 2))
                     Spacer()
-                        .frame(minHeight: 100)
+                        .frame(minHeight: 200)
                         .fixedSize()
-                    Button {
+                    MyCustomButton(text: "Продолжить") {
                         print("продолжить")
-                    } label: {
-                        Text("Продолжить")
-                            .font(
-                                .system(size: 30)
-                                .weight(.bold)
-                            )
-                            .foregroundColor(SSSColor.black)
-                            .frame(
-                                width: wDdevice - 100,
-                                height: 50,
-                                alignment: .center
-                            )
-                            .background(SSSColor.white)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
+                    Spacer()
                 }
             }
         }
