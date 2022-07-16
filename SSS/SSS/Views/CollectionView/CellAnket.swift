@@ -25,14 +25,18 @@ struct CellAnket: View {
             HStack {
                 Text("30m")
                     .foregroundColor(SSSColor.white)
+                    .frame(width: 50)
                 Text("1h")
                     .foregroundColor(SSSColor.white)
+                    .frame(width: 50)
             }
             HStack {
                 Text("2000")
                     .foregroundColor(SSSColor.white)
+                    .frame(width: 50)
                 Text("3000")
                     .foregroundColor(SSSColor.white)
+                    .frame(width: 50)
             }
         }
     }
@@ -42,10 +46,15 @@ struct CellAnket: View {
             Spacer()
                 .frame(height: 10)
             HStack {
+                Spacer()
+                    .frame(width: 10)
                 Text("НЕ АКТИВНА")
-                    .padding(5)
+                    .padding([.bottom, .top], 6)
+                    .padding([.leading, .trailing], 10)
                     .foregroundColor(SSSColor.white)
                     .background(SSSColor.black)
+                    .modifier(RoundedEdge(width: 2, color: SSSColor.red, cornerRadius: 12))
+                Spacer()
             }
             Spacer()
         }

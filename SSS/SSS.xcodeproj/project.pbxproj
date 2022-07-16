@@ -18,6 +18,7 @@
 		45009B8D287F45FA006FDB0D /* ButtonCifr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B8C287F45FA006FDB0D /* ButtonCifr.swift */; };
 		45009B8F287F4635006FDB0D /* ButtonDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B8E287F4635006FDB0D /* ButtonDelete.swift */; };
 		45009B91287F5502006FDB0D /* PageControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45009B90287F5502006FDB0D /* PageControll.swift */; };
+		451FA6A22882F7BB0013D889 /* RoundedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA6A12882F7BB0013D889 /* RoundedEdge.swift */; };
 		456CFBF42880262E007F50DE /* URLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CFBF32880262E007F50DE /* URLView.swift */; };
 		45E4044F2882BEBD00694364 /* CellAnket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4044E2882BEBD00694364 /* CellAnket.swift */; };
 		45F80D6B28818FE000A9C5DF /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F80D6A28818FE000A9C5DF /* CollectionView.swift */; };
@@ -39,6 +40,7 @@
 		45009B8C287F45FA006FDB0D /* ButtonCifr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCifr.swift; sourceTree = "<group>"; };
 		45009B8E287F4635006FDB0D /* ButtonDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelete.swift; sourceTree = "<group>"; };
 		45009B90287F5502006FDB0D /* PageControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControll.swift; sourceTree = "<group>"; };
+		451FA6A12882F7BB0013D889 /* RoundedEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedEdge.swift; sourceTree = "<group>"; };
 		456CFBF32880262E007F50DE /* URLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLView.swift; sourceTree = "<group>"; };
 		45E4044E2882BEBD00694364 /* CellAnket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAnket.swift; sourceTree = "<group>"; };
 		45F80D6A28818FE000A9C5DF /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				45F80D732881A57800A9C5DF /* Anket.swift */,
+				451FA6A12882F7BB0013D889 /* RoundedEdge.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				45009B8D287F45FA006FDB0D /* ButtonCifr.swift in Sources */,
 				45009B8F287F4635006FDB0D /* ButtonDelete.swift in Sources */,
 				45009B75287F293B006FDB0D /* ContentView.swift in Sources */,
+				451FA6A22882F7BB0013D889 /* RoundedEdge.swift in Sources */,
 				45009B87287F316A006FDB0D /* UIColor.swift in Sources */,
 				45F80D6B28818FE000A9C5DF /* CollectionView.swift in Sources */,
 				45009B73287F293B006FDB0D /* SSSApp.swift in Sources */,
